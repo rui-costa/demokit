@@ -1,30 +1,35 @@
-# DemoKit for Team Kappa
+# DemoKit for team presentations
+A way to share your screen and camera on the same window, making your presentations more professional and beautiful.
 
-## 🧰 How to Use
+## Content
+1. [👀 The different views](#the-different-views)
+1. [🧱 Set up a room](#set-up-a-room)
+1. [📜 License](#license)
+1. [💻 OBS Ninja](#obs-ninja)
 
-### I have a room code and password
-If you are either a presenter or someone sharing the presentation, now that you have a `Room Code` and `Password`, just open the following files.
-- For Sharing the Screen `index.html`
-- For joining a presentation session `invite.html`
+## The different views
+The demokit is comprised of 3 pages that represent 3 different modes.
+| Page | Description | File |
+| - | - | - |
+| Invitation | Create and manage new invitation links. Generates 1 presenter at the time. | `invite.html` |
+| Producer | You can pre-view all presenters at the same time. Generate 3 presenter pre-views at a time | `producer.html` |
+| Sharing | The window to share your presentation. You can move presenters by using your `numpad`, numbers from 1 - 9 | `index.html` |
 
-### I Don't have a room code and password
-If you want to generate a `Room Code` and `Password` for your team: 
-- open the invitation link `invite.html`
-- accept the auto generated `Room Code` and `Password`, or add one of your own
-- share the `Room Code` and `Password` with your team
-If you are the one sharing your screen, you can now open the Screen Sharing link `index.html` and add the `Room Code` and `Password`.
-If you forgot your `Room Code` or `Password`, just click on the `🔐` icon on the right top corner.
 
-## For presentation
+## Set up the room
+The first time you open a page you are presented with an input request. This request changes depending on the page you open.
+- For __Producer View__ and __Invite View__
+![screenshot1](assets/screenshot1.png)
+- For __Sharing View__
 
-### 🌐 I need to run a Webserver
-There may be the need to serve the `index.html` as a website and not as a file(`file:\\` ) in your computer.
-For those cases, you can serve it using the lite webserver in node.js. 
-Follow the steps:
-- Make sure you have node installed `node --version`. If you don't, go to the official [website](https://nodejs.org/en/) and follow the instructions.
-- run `npm install`
-- run `npm start`
-- if the webpage doesn't open, go to `http://localhost:1337`
+| Code | Password |
+| - | - |
+| ![screenshot1](assets/screenshot2.png) | ![screenshot1](assets/screenshot3.png) |
 
-### 🖼 I want a Frameless Chrome window
-If you want to run a frameless window in chrome, use the `presenter.sh` script
+> __Note:__ Make sure you always use the same __CODE__ and __PASSWORD__ between the different views.
+
+## License
+The source code for this project is released under the [MIT License](https://mit-license.org/).
+
+## OBS Ninja
+This demokit leverages the [obs.ninja](https://obs.ninja/) software create by [Steve Seguin](https://github.com/steveseguin). You can view the code in [GitHub](https://github.com/steveseguin/obsninja).
